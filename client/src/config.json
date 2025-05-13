@@ -1,4 +1,4 @@
 {
-  "SERVER_URL": "https://passport-multiple-template.vercel.app",
-  "BACKEND_URL": "https://passport-multiple-template.vercel.app"
+  "SERVER_URL": "http://localhost:5000",
+  "BACKEND_URL": "http://localhost:5000"
 }

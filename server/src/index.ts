@@ -7,7 +7,7 @@ dotenv.config()
 // const __dirname = dirname(__filename)
 // const clientBuildPath = path.join(__dirname, '../../', 'client')
 import path from 'path'
-const clientBuildPath = path.join(process.cwd(), 'client', 'build')
+const clientBuildPath = path.join(process.cwd(), '../', 'client', 'build')
 
 import cookieParser from 'cookie-parser'
 import express from 'express'
@@ -41,7 +41,7 @@ app.use(
       maxAge: 3600000, // 1h
       path: '/',
       httpOnly: true,
-      secure: true,
+      secure: false,
       sameSite: 'lax',
     },
   })

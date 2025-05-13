@@ -1,5 +1,5 @@
 {
   "SERVER_PORT": 5000,
-  "CLIENT_URL": "https://passport-multiple-template.vercel.app",
-  "SERVER_URL": "https://passport-multiple-template.vercel.app"
+  "CLIENT_URL": "http://localhost:5000",
+  "SERVER_URL": "http://localhost:5000"
 }
