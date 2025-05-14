@@ -17,6 +17,13 @@ import { v4 as uuidv4 } from 'uuid'
 import config from './config.json' with { type: 'json' }
 import * as routers from './routers/_routers.js'
 import './strategies/_strategies.js'
+import { RedisStore } from 'connect-redis'
+import { createClient } from 'redis'
+
+let redisClient = createClient()
+redisClient.connect().catch(console.error)
+
+let redisStore = new RedisStore({ client: redisClient })
 
 const app = express()
 // app.use(
@@ -35,13 +42,19 @@ app.use(
     saveUninitialized: false,
     resave: false,
     proxy: true,
-    name: uuidv4(),
+    store: redisStore,
+    //    name: uuidv4(),
     cookie: {
       maxAge: 3600000, // 1h
       path: '/',
       httpOnly: true,
+<<<<<<< HEAD
       secure: false,
       sameSite: 'lax',
+=======
+      secure: true,
+      sameSite: 'strict',
+>>>>>>> master
     },
   })
 )

@@ -21,6 +21,7 @@
     "@types/passport-google-oauth20": "^2.0.16",
     "@types/passport-local": "^1.0.38",
     "bcrypt": "^5.1.1",
+    "connect-redis": "^8.0.3",
     "cookie-parser": "^1.4.7",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
@@ -31,6 +32,7 @@
     "passport-github2": "^0.1.12",
     "passport-google-oauth20": "^2.0.0",
     "passport-local": "^1.0.0",
+    "redis": "^5.0.1",
     "ts-template": "file:..",
     "typescript": "^5.8.3",
     "uuid": "^11.1.0"
