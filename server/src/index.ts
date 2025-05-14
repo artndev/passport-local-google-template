@@ -48,13 +48,8 @@ app.use(
       maxAge: 3600000, // 1h
       path: '/',
       httpOnly: true,
-<<<<<<< HEAD
       secure: false,
       sameSite: 'lax',
-=======
-      secure: true,
-      sameSite: 'strict',
->>>>>>> master
     },
   })
 )
